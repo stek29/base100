@@ -19,6 +19,6 @@ def decode(s: str):
         if i % 4 == 2:
             tmp = ((b - 143) * 64) % 256
         elif i % 4 == 3:
-            out[i//4] = b - 128 + tmp - 55
+            out[i//4] = (b - 128 + tmp - 55)&0xff
     return bytes(out)
 
