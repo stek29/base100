@@ -1,5 +1,6 @@
 # Licensed under UNLICENSE
 # See UNLICENSE provided with this file for details
+# For more information, please refer to <http://unlicense.org/>
 
 def encode(data: bytes):
     out = [240, 159, 0, 0]*len(data)
